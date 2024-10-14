@@ -5,7 +5,6 @@ function App() {
   return (
     <ThemeProvider>
       <Header />
-      <div className="font-bold">Outlet das Carnes</div>
     </ThemeProvider>
   );
 }
