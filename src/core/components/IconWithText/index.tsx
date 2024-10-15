@@ -1,18 +1,19 @@
-import IconContainer from "@mui/material/Icon";
+import { SvgIconTypeMap } from "@mui/material";
+import { OverridableComponent } from "@mui/material/OverridableComponent";
 
 interface IPropsIconWithText {
-  icon: string;
+  icon: OverridableComponent<SvgIconTypeMap<{}, "svg">>;
   text: string;
   link?: string;
 }
 
-const IconWithText = ({ icon, text, link }: IPropsIconWithText) => {
+const IconWithText = (props: IPropsIconWithText) => {
   return (
-    <a href={link ?? "#"}>
+    <a href={props.link ?? "#"}>
       <span className="flex items-center justify-center gap-2">
-        <IconContainer fontSize="large">{icon}</IconContainer>
+        <props.icon fontSize="large" />
         <span className="font-bold whitespace-pre uppercase tracking-tighter text-xs">
-          {text}
+          {props.text}
         </span>
       </span>
     </a>

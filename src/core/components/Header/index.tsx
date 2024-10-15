@@ -7,6 +7,7 @@ import IconWithText from "@components/IconWithText";
 import OptionOffer from "@components/OptionOffer";
 import OptionsSubOffers from "@components/OptionsSubOffers";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import gifVemdeZap from "/assets/vem-de-zap.gif";
 import logo from "/assets/logo.png";
 
@@ -26,10 +27,18 @@ const Header = () => {
           </a>
         </span>
         <span>
-          <OptionOffer title="Categorias" text="Veja nossos Produtos" />
+          <OptionOffer
+            title="Categorias"
+            text="Veja nossos Produtos"
+            link="#"
+          />
         </span>
         <span>
-          <OptionOffer title="Super Kits" text="Combinações exclusivas" />
+          <OptionOffer
+            title="Super Kits"
+            text="Combinações exclusivas"
+            link="#"
+          />
         </span>
         <span>
           <a
@@ -62,11 +71,11 @@ const Header = () => {
         <span className="flex-initial w-54">
           <IconWithText
             text={`Bem vindo,\nacesse aqui seu perfil`}
-            icon="person"
+            icon={PersonOutlineOutlinedIcon}
           />
         </span>
         <span className="flex-initial w-54">
-          <IconWithText text="Carrinho" icon="shopping_cart" />
+          <IconWithText text="Carrinho" icon={ShoppingCartOutlinedIcon} />
         </span>
       </div>
       <OptionsSubOffers
