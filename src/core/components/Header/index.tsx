@@ -13,8 +13,8 @@ import logo from "/assets/logo.png";
 
 const Header = () => {
   return (
-    <div className="container flex flex-col mx-auto">
-      <div className="px-20 py-4 flex gap-6 place-items-center w-full justify-center">
+    <div className="flex flex-col mx-auto">
+      <div className="container mx-auto px-20 py-4 flex gap-6 place-items-center w-full justify-center">
         <span>
           <a href="#" target="_blank">
             <img
