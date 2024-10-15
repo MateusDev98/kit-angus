@@ -16,7 +16,11 @@ const OptionsSubOffers = ({ options }: IPropsOptionsSubOffers) => {
       <div className="container flex gap-3 w-full items-center justify-center">
         {options.map((option, index) => {
           return (
-            <a href={option.link} key={index}>
+            <a
+              href={option.link}
+              key={index}
+              className="hover:text-orange-400 transition duration-300"
+            >
               <span className="flex items-center justify-center gap-2">
                 <span className="bg-black rounded-full flex items-center justify-center p-2">
                   <option.icon
@@ -26,7 +30,7 @@ const OptionsSubOffers = ({ options }: IPropsOptionsSubOffers) => {
                     }}
                   />
                 </span>
-                <span className="uppercase whitespace-pre tracking-tighter font-bold text-xs">
+                <span className="text-start uppercase whitespace-pre tracking-tighter font-bold text-xs">
                   {option.text}
                 </span>
               </span>
