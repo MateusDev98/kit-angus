@@ -30,9 +30,9 @@ const OptionsSubOffers = ({ options }: IPropsOptionsSubOffers) => {
                     }}
                   />
                 </span>
-                <span className="text-start uppercase whitespace-pre tracking-tighter font-bold text-xs">
+                <strong className="text-start uppercase whitespace-pre tracking-tighter leading-none">
                   {option.text}
-                </span>
+                </strong>
               </span>
             </a>
           );

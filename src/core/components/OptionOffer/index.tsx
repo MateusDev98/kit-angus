@@ -8,8 +8,8 @@ const OptionOffer = ({ title, text, link }: IPropsOptionOffer) => {
   return (
     <a href={link} className="hover:text-orange-400 transition duration-300">
       <span className="flex flex-col leading-none">
-        <span className="uppercase tracking-tighter font-bold">{title}</span>
-        <span className="whitespace-pre tracking-tighter text-xs">{text}</span>
+        <strong className="uppercase tracking-tighter">{title}</strong>
+        <span className="whitespace-pre tracking-tighter">{text}</span>
       </span>
     </a>
   );

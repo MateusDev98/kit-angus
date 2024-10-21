@@ -15,9 +15,9 @@ const IconWithText = (props: IPropsIconWithText) => {
     >
       <span className="flex items-center justify-center gap-2">
         <props.icon fontSize="large" />
-        <span className="font-bold whitespace-pre uppercase tracking-tighter text-xs">
+        <strong className="whitespace-pre uppercase tracking-tighter leading-none">
           {props.text}
-        </span>
+        </strong>
       </span>
     </a>
   );
