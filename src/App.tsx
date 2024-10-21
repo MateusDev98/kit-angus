@@ -6,7 +6,7 @@ function App() {
   return (
     <ThemeProvider>
       <Header />
-      <main className="container mx-auto px-20">
+      <main className="container mx-auto p-20">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti atque
         consequuntur nam, dolorem illum saepe officiis illo sint sapiente
         doloremque possimus dolores quos repellendus alias. Assumenda
